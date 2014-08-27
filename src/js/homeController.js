@@ -2,8 +2,15 @@
 
 angular.module('angularGruntSeed')
 
-.controller('HomeController', ['$scope',
+.controller('HomeController', ['$scope', 'GridService',
     function($scope, gridService) {
-        console.log('HomeController called .................');
+
+        gridService.getContributors().then(function(data) {
+            $scope.myData = data;
+        });
+
+        $scope.gridOptions = {
+            data: 'myData'
+        };
     }
 ]);

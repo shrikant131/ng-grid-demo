@@ -28,6 +28,28 @@ module.exports = {
             }
         ]
     },
+    css: {
+        files: [
+            {
+                cwd     : 'src/css/',
+                src     : '**/*.css',
+                dest    : '.build/css/',
+                flatten : false,
+                expand  : true
+            }
+        ]
+    },
+    json: {
+        files: [
+            {
+                cwd     : 'src/json/',
+                src     : '**/*.json',
+                dest    : '.build/json/',
+                flatten : false,
+                expand  : true
+            }
+        ]
+    },
     images: {
         files: [
             {

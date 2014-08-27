@@ -6,4 +6,5 @@ angular.module('angularGruntSeed', [
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'ngGrid'
 ]);
