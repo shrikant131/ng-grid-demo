@@ -10,3 +10,7 @@ body {
     width: 800px;
     height: 200px;
 }
+.green {
+    background-color: green;
+    color: white;
+}
